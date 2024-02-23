@@ -86,6 +86,9 @@ body{
     width: 30%;
     height: 300px;
 }
+#mapa{
+    width: 100%;
+}
 footer {
     color: white;
     background-color:rgb(92, 77, 39);
@@ -98,6 +101,7 @@ footer {
    width: 2%; 
    height: 30px
 }
+
 @media screen and (min-width: 430px) and (max-width: 932px) {
     #logo {
         width: 26%;
