@@ -1,0 +1,26 @@
+body{
+    background-image: url(fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#tauler{
+    margin-left: 36%;
+    margin-top: 14%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 30%;
+    display: flex;
+}
+#section_tauler{
+    margin-top: 5%;
+    width: 100%;
+}
+
+#whac{
+    position: absolute;
+    display: none;
+}
+#tauler img{
+    width: 128px;
+}

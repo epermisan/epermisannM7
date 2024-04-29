@@ -1,0 +1,86 @@
+<html lang="ca" class="translated-ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ExG.css" type="text/css">
+  <link rel="icon" type="icon" href="topoPam.png">
+
+  <title>Whac-A-Mole</title>
+</head>
+
+<body>
+  <section id="section_score">
+      <div id="score_tauler">
+      <h1> WHAC-A-MOLE </h1>
+      <h2> Puntuació: <span id="score"> 0 </span></h2>
+  </div>
+  </section>
+
+  <div id="section_tauler">
+  <div id="tauler">
+      <audio id="boing" src="boing.mp3"></audio>
+      <img id="topo0" src="topoNo.png" onclick="fallo(0)">
+      <img id="topo1" src="topoNo.png" onclick="fallo(1)">
+      <img id="topo2" src="topoNo.png" onclick="fallo(2)">
+      <img id="topo3" src="topoNo.png" onclick="fallo(3)">
+      <img id="topo4" src="topoNo.png" onclick="fallo(4)">
+      <img id="topo5" src="topoNo.png" onclick="fallo(5)">
+      <img id="topo6" src="topoNo.png" onclick="fallo(6)">
+      <img id="topo7" src="topoNo.png" onclick="fallo(7)">
+      <img id="topo8" src="topoNo.png" onclick="fallo(8)">
+      <img id="whac" src="topoSi.png" style="display: none;" alt="" onclick="hitWhac()">
+  </div>
+  </div>
+
+<script>
+
+  var score = 0;
+
+  function getRandomIndex(){
+    return Math.floor(Math.random() * 9);
+  }
+
+  function showWhac() {
+    borrarTopo();
+    console.log("Entrant Funcio");
+    var whacIndex = getRandomIndex();
+    var whac = document.getElementById("topo" + whacIndex);
+    console.log(whacIndex);
+    whac.src = "topoSi.png";
+  }
+  
+  function borrarTopo(){
+    console.log("Borrant topo");
+    document.getElementById("topo0").src="topoNo.png";
+    document.getElementById("topo1").src="topoNo.png";
+    document.getElementById("topo2").src="topoNo.png";
+    document.getElementById("topo3").src="topoNo.png";
+    document.getElementById("topo4").src="topoNo.png";
+    document.getElementById("topo5").src="topoNo.png";
+    document.getElementById("topo6").src="topoNo.png";
+    document.getElementById("topo7").src="topoNo.png";
+    document.getElementById("topo8").src="topoNo.png";
+  }
+
+  function fallo(){
+    score--;
+    if (score < 0){
+      score = 0;
+    }
+    document.getElementById("score").innerHTML = score;
+  }
+
+  function hitWhac(){
+    score++;
+    document.getElementById("score").innerText = score;
+  }
+
+  setInterval(showWhac, 3000);
+</script>
+
+
+</body>
+</html>
+
