@@ -1,0 +1,109 @@
+body{
+    background-color:rgb(78, 73, 73);
+    margin: 0
+}
+#imagengrande{
+    background-color:rgb(37, 37, 37);
+    object-fit: cover;
+}
+#link{
+    text-align: center;
+    background-color:rgb(37, 37, 37);
+
+}
+#link1{
+    color:rgba(140, 177, 195, 0.8) ;
+    text-decoration: none;
+    font-size: 25px;
+}
+#link1:hover {
+    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(184, 184, 232);
+}
+#audio{
+    text-align: center;
+    margin-top: 1%;
+}
+#fotos{
+    display: inline-block;
+    background: #b6c2c6;
+    object-fit: cover;
+    width: 18%; 
+    height: 300px;
+    margin-left: 5%;
+    margin-top: 25px;
+}
+#cantants{
+    color: rgb(169, 169, 169);
+    font-size: 20px;
+}
+#funcio{
+    margin-left: 13.3%;
+    color: rgb(169, 169, 169);
+    font-size: 20px;
+
+}
+.components{
+    display:flex;
+    justify-content:flex-start;
+    margin-left: 5%;
+    font-size: medium;
+}
+#cantant{
+    text-decoration: none;
+    color: rgb(169, 169, 169);
+}
+#cantant:hover {
+    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(184, 184, 232);
+}
+table {
+    width: 87.8%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 5%;
+}
+th, td {
+    border: 1px solid #a7a7a7;
+    padding: 8px;
+    text-align: left;
+}
+td{
+    color: rgb(145, 144, 144);
+}
+
+th {
+    background-color: #b5b5b5;
+}
+#album{
+    text-decoration: none;
+    color: rgb(145, 144, 144);
+}
+#album:hover {
+    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(184, 184, 232);
+}
+.videos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+#video{
+    border-radius: 20px;
+}
+footer {
+    color: white;
+    background-color:rgb(78, 73, 73);
+    padding: 17px 10px;
+}
+
+#redes{
+   float: right;
+   padding-bottom: 10px;
+   margin-left: 5px;
+}

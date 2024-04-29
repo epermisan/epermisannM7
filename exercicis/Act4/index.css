@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: "Regular";
+}
+#imagen{
+    width: 100%;
+}
+#imagengrande1{
+    width: 100%;
+}
+#section_portfolio {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h2{
+    font-family: Bold;
+    color: white;
+}
+p{
+    color: white;
+}
+.topnav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+#section_aboutme {
+    background-image: url(img.png);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 40px solid black;
+    padding-left: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#aboutme {
+    width: 95%;
+
+}
+#section_cv {
+    background-color: #000000;
+    padding: 15px;
+}
+#cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2.5vw;
+}
+.button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: border-width 0.2s ease-in-out;
+}
+#section_projectsDAM {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#projectsDAM {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#projectsDAM div {
+    border: 5px solid rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+}
+#textdam {
+    width: 100%;
+    text-align: center;
+}
+#projectsDAM img {
+    width: 300px;
+}
+h3{
+    color: white;
+}
+#section_contact {
+    width: 100%;
+    background-image: url(img.png);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 4%;
+}
+#section_contact h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+form {
+    display: block;
+    margin-top: 0;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+label {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="email"], textarea {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+    width: 100%;
+    color: white;
+}
+footer {
+    color: rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    padding: 22px;
+}
+#redes{
+   float: right;
+   margin-bottom: 8px;
+   margin-left: 5px;
+   width: 2%; 
+   height: 30px
+}
